@@ -1,0 +1,20 @@
+{
+  "name": "module",
+  "version": "1.0.0",
+  "description": "Creating Node Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamsuz/module.git"
+  },
+  "keywords": [],
+  "author": "Sujit M <smahavarkar@gmail.com> (https://mahavarkar.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamsuz/module/issues"
+  },
+  "homepage": "https://github.com/iamsuz/module#readme"
+}
