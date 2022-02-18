@@ -1,2 +1,3 @@
-# module
-Creating Node Module
+# Random Color Generator
+
+This generates random color
