@@ -1,4 +1,10 @@
+
+/**
+ * 
+ * @returns 
+ */
 function generateRandomColor() {
+    //Only these many letters
     const letters = "0123456789ABCDEF";
     let color = "#";
     for (let i = 0; i < 6; i++) {
