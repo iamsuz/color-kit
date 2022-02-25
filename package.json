@@ -1,20 +1,20 @@
 {
   "name": "module",
   "version": "1.0.0",
-  "description": "Creating Node Module",
-  "main": "index.js",
+  "description": "A toolkit to generate random colors and identify color names",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamsuz/module.git"
+    "url": "git+https://github.com/iamsuz/color-kit.git"
   },
   "keywords": [],
-  "author": "Sujit M <smahavarkar@gmail.com> (https://mahavarkar.com)",
+  "author": "Sujit M <s.mahavarkar@gmail.com> (https://mahavarkar.com)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iamsuz/module/issues"
+    "url": "https://github.com/iamsuz/color-kit/issues"
   },
-  "homepage": "https://github.com/iamsuz/module#readme"
+  "homepage": "https://github.com/iamsuz/color-kit#readme"
 }
