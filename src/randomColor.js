@@ -1,7 +1,7 @@
 
 /**
- * 
- * @returns 
+ * This function generatos the Hex Color Code
+ * @returns String
  */
 function generateRandomColor() {
     //Only these many letters
