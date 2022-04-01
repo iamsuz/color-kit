@@ -3,21 +3,20 @@ const colors = require('./colors');
 const ic = {
     name: function (color) {
         if (!/^#[0-9A-F]{6}$/i.test(color)) {
-            return ["#000000", `Invalid Color: ${color}`, false];
+            return { inputColor: color, colorName: `Invalid Color: ${color}`, closestHex: null, exactMatch: false };
         }
 
         color = color.toUpperCase();
         const rgb = this.rgb(color);
-
         let closestMatch = null;
         let smallestDistance = Infinity;
 
         for (const c of colors) {
             const targetRgb = this.rgb(c.hex);
             const distance = this.calculateDistance(rgb, targetRgb);
-
             if (distance === 0) {
-                return [c.hex, c.name, true]; // Exact match
+                // Exact match found
+                return { inputColor: color, colorName: c.name, closestHex: c.hex, exactMatch: true };
             }
 
             if (distance < smallestDistance) {
@@ -27,8 +26,8 @@ const ic = {
         }
 
         return closestMatch
-            ? [closestMatch.hex, closestMatch.name, false]
-            : ["#000000", `Invalid Color: ${color}`, false];
+            ? { inputColor: color, colorName: closestMatch.name, closestHex: closestMatch.hex, exactMatch: false, distance: smallestDistance }
+            : { inputColor: "#000000", colorName: `Invalid Color: ${color}`, closestHex: null, exactMatch: false };
     },
 
     /**
@@ -57,16 +56,12 @@ const ic = {
             Math.pow(rgb1[2] - rgb2[2], 2)
         );
     }
-}
+};
+
 
 function identifyColor(hex) {
     const result = ic.name(hex);
-    return {
-        inputColor: result[0],
-        colorName: result[1],
-        closestHex: result[2],
-        exactMatch: result[3],
-    };
+    return result
 }
 
 module.exports = { identifyColor };
