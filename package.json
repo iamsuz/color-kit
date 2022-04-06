@@ -1,5 +1,5 @@
 {
-  "name": "module",
+  "name": "@iamsuz/color-kit",
   "version": "1.0.0",
   "description": "A toolkit to generate random colors and identify color names",
   "main": "src/index.js",
@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/iamsuz/color-kit.git"
   },
-  "keywords": [],
+  "keywords": [
+    "color",
+    "generate-color",
+    "similiar-colors",
+    "euclidean-distance"
+  ],
   "author": "Sujit M <s.mahavarkar@gmail.com> (https://mahavarkar.com)",
   "license": "ISC",
   "bugs": {
