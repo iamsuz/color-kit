@@ -1,6 +1,6 @@
 {
   "name": "@iamsuz/color-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A toolkit to generate random colors and identify color names",
   "main": "src/index.js",
   "scripts": {
@@ -12,6 +12,10 @@
   },
   "keywords": [
     "color",
+    "random color",
+    "hex",
+    "color names",
+    "color matching",
     "generate-color",
     "similiar-colors",
     "euclidean-distance"
