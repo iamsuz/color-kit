@@ -58,10 +58,23 @@ const ic = {
     }
 };
 
-
+/**
+ * This function identifies the give color hex value or its closest color
+ * @param {*} hex 
+ * @returns Object
+ */
 function identifyColor(hex) {
     const result = ic.name(hex);
     return result
 }
 
-module.exports = { identifyColor };
+/**
+ * This function converts hex color to rgb value
+ * @param {*} hex 
+ * @returns 
+ */
+function hexToRgb(hex) {
+    return ic.rgb(hex)
+}
+
+module.exports = { identifyColor, hexToRgb };
