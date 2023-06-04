@@ -1,29 +1,33 @@
 {
-  "name": "@iamsuz/color-kit",
-  "version": "1.0.1",
-  "description": "A toolkit to generate random colors and identify color names",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iamsuz/color-kit.git"
-  },
-  "keywords": [
-    "color",
-    "random color",
-    "hex",
-    "color names",
-    "color matching",
-    "generate-color",
-    "similiar-colors",
-    "euclidean-distance"
-  ],
-  "author": "Sujit M <s.mahavarkar@gmail.com> (https://mahavarkar.com)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/iamsuz/color-kit/issues"
-  },
-  "homepage": "https://github.com/iamsuz/color-kit#readme"
+	"name": "@iamsuz/color-kit",
+	"version": "1.0.1",
+	"description": "A toolkit to generate random colors and identify color names",
+	"main": "src/index.js",
+	"types": "index.d.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/iamsuz/color-kit.git"
+	},
+	"keywords": [
+		"color",
+		"random color",
+		"hex",
+		"color names",
+		"color matching",
+		"generate-color",
+		"similiar-colors",
+		"euclidean-distance"
+	],
+	"author": "Sujit M <s.mahavarkar@gmail.com> (https://mahavarkar.com)",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/iamsuz/color-kit/issues"
+	},
+	"homepage": "https://github.com/iamsuz/color-kit#readme",
+	"devDependencies": {
+		"typescript": "^5.7.3"
+	}
 }
