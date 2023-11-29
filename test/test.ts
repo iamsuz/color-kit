@@ -19,4 +19,4 @@ const randomColor = generateRandomColor();
 
 // Using Color interface
 const exampleColor: Color = { hex: "#FFFFFF", name: "White" };
-console.log({ exampleColor });
+console.log(exampleColor);
