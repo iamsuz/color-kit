@@ -15,7 +15,7 @@ console.log(rgb); // [255, 87, 51]
 
 // Using generateRandomColor
 const randomColor = generateRandomColor();
-// console.log({ randomColor }); // "#A1B2C3"
+console.log({ randomColor }); // "#A1B2C3"
 
 // Using Color interface
 const exampleColor: Color = { hex: "#FFFFFF", name: "White" };
