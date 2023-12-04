@@ -3,7 +3,7 @@ import { generateRandomColor } from "../src/randomColor";
 import { Color } from "../statics/colors";
 
 // Using identifyColor
-const colorInfo = identifyColor("#FF5733");
+const colorInfo = identifyColor("#FFFF33");
 
 console.log(colorInfo.colorName); // "Closest Color Name"
 console.log(colorInfo); // Distance if not an exact match
