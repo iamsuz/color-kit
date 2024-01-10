@@ -5,8 +5,9 @@ import { Color } from "../statics/colors";
 // Using identifyColor
 const colorInfo = identifyColor("#FFFF33");
 
-console.log(colorInfo.closestHex); // "Closest Color Name"
+console.log(colorInfo.closestHex); //
 console.log(colorInfo.distance); // Distance if not an exact match
+console.log(colorInfo.colorName); // "Closest Color Name"
 
 // Using hexToRgb
 const rgb = hexToRgb("#FF5733");
