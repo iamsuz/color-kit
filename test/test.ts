@@ -1,5 +1,5 @@
 import { identifyColor, hexToRgb } from "../src/identifyColor";
-import { generateRandomColor } from "../src/randomColor";
+import { generateRandomColor } from "../types/randomColor";
 import { Color } from "../statics/colors";
 
 // Using identifyColor

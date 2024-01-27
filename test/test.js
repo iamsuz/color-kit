@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var identifyColor_1 = require("../src/identifyColor");
-var randomColor_1 = require("../src/randomColor");
+var randomColor_1 = require("../types/randomColor");
 // Using identifyColor
 var colorInfo = (0, identifyColor_1.identifyColor)("#FF5733");
 console.log(colorInfo); // "Closest Color Name"
