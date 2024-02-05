@@ -11,7 +11,8 @@
 		"README.md"
 	],
 	"scripts": {
-		"test": "npx tsc --noEmit"
+		"test": "npx tsc --noEmit",
+		"build": "npx tsc"
 	},
 	"repository": {
 		"type": "git",
