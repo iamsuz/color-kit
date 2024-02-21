@@ -1,4 +1,4 @@
-import { Color } from "../statics/colors";
+import { Color } from "./colors";
 
 /**
  * Result of identifying a color.
