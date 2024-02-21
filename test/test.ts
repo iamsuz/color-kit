@@ -1,6 +1,6 @@
 import { identifyColor, hexToRgb } from "../src/identifyColor";
 import { generateRandomColor } from "../types/randomColor";
-import { Color } from "../statics/colors";
+import { Color } from "../types/colors";
 
 // Using identifyColor
 const colorInfo = identifyColor("#FFFF33");
