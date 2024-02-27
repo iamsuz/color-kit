@@ -1,5 +1,24 @@
-const colors = require("../statics/colors");
+const colors = require("./statics/colors");
 
+/**
+ * @typedef {Object} ColorMatch
+ * @property {string} inputColor - The original hex color value.
+ * @property {string} colorName - The name of the matched color.
+ * @property {string|null} closestHex - The hex value of the closest match or null if not found.
+ * @property {boolean} exactMatch - Whether the color is an exact match or not.
+ * @property {number} [distance] - The distance between the input color and the closest match (optional).
+ */
+
+/**
+ * @typedef {Object} IC
+ * @property {(color: string) => ColorMatch} name - Function to get the closest color match.
+ * @property {(color: string) => number[]} rgb - Function to convert hex to RGB.
+ * @property {(rgb1: number[], rgb2: number[]) => number} calculateDistance - Function to calculate the distance between two RGB colors.
+ */
+
+/**
+ * @type {IC}
+ */
 const ic = {
 	name: function (color) {
 		if (!/^#[0-9A-F]{6}$/i.test(color)) {
@@ -54,7 +73,7 @@ const ic = {
 	/**
 	 * Convert a hex color code to RGB.
 	 * @param {string} color - Hex color code.
-	 * @returns {Array} - [Red, Green, Blue].
+	 * @returns {number[]} - [Red, Green, Blue].
 	 */
 	rgb: function (color) {
 		return [
@@ -66,8 +85,8 @@ const ic = {
 
 	/**
 	 * Calculate the Euclidean distance between two RGB colors.
-	 * @param {Array} rgb1 - [Red, Green, Blue].
-	 * @param {Array} rgb2 - [Red, Green, Blue].
+	 * @param {number[]} rgb1 - [Red, Green, Blue].
+	 * @param {number[]} rgb2 - [Red, Green, Blue].
 	 * @returns {number} - Distance between the two colors.
 	 */
 	calculateDistance: function (rgb1, rgb2) {
