@@ -1,12 +1,20 @@
 {
 	"compilerOptions": {
-		"target": "ES6",
-		"module": "CommonJS",
-		"strict": true,
-		"esModuleInterop": true,
-		"skipLibCheck": true,
-		"declaration": true
+		"target": "ES6", // Target JavaScript version
+		"module": "CommonJS", // Module system
+		"strict": true, // Enable all strict type checking options
+		"esModuleInterop": true, // Allow default import syntax for CommonJS modules
+		"skipLibCheck": true, // Skip type checking of declaration files
+		"declaration": true, // Generate declaration files (.d.ts)
+		"allowJs": true, // Allow JavaScript files to be compiled
+		"outDir": "dist", // Output directory for compiled files
+		"checkJs": true // Type-check JavaScript files
 	},
-	"include": ["src/*", "types/*"],
-	"exclude": ["node_modules"]
+	"include": [
+		"src/**/*", // Include all JavaScript files in src
+		"types/**/*" // Include type declaration files
+	],
+	"exclude": [
+		"node_modules" // Exclude node_modules folder
+	]
 }
