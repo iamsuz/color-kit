@@ -10,4 +10,4 @@ export interface Color {
  */
 declare const colors: Color[];
 
-export default colors;
+export = colors;
