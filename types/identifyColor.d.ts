@@ -3,7 +3,7 @@ import { Color } from "./colors";
 /**
  * Result of identifying a color.
  */
-export interface IdentifyColorResult {
+export interface ColorMatch {
 	inputColor: string;
 	colorName: string;
 	closestHex: string | null;
@@ -12,11 +12,20 @@ export interface IdentifyColorResult {
 }
 
 /**
+ * Defines the structure of the `ic` object and its methods.
+ */
+export interface IC {
+	name(color: string): ColorMatch;
+	rgb(color: string): number[];
+	calculateDistance(rgb1: number[], rgb2: number[]): number;
+}
+
+/**
  * Identifies the given color hex value or its closest color.
  * @param hex - The hex color value (e.g., "#FF5733").
  * @returns An object containing color information.
  */
-export function identifyColor(hex: string): IdentifyColorResult;
+export function identifyColor(hex: string): ColorMatch;
 
 /**
  * Converts a hex color value to an RGB array.
