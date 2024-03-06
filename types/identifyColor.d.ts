@@ -14,7 +14,7 @@ export interface ColorMatch {
 /**
  * Defines the structure of the `ic` object and its methods.
  */
-export interface I {
+export interface IC {
 	name(color: string): ColorMatch;
 	rgb(color: string): number[];
 	calculateDistance(rgb1: number[], rgb2: number[]): number;
