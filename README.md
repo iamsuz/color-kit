@@ -1,6 +1,6 @@
 # Color Kit
 
-A simple, yet powerful package for identifying and matching colors in JavaScript.
+A simple, yet powerful package for identifying and matching colors in JavaScript and Typescript.
 
 ## Features
 
@@ -25,27 +25,43 @@ npm install @iamsuz/color-kit
 const { identifyColor } = require("@iamsuz/color-kit");
 ```
 
+For TypeScript users, the package provides type definitions for the functions. You can import the package as follows:
+
+```Typescript
+import { identifyColor, rgb, calculateDistance } from "@iamsuz/color-kit";
+```
+
 ### Identifying a Color
 
 You can pass a hex color code to the `identifyColor` function to get the closest match, color name, and more.
 
 ```javascript
 const { inputColor, colorName, closestHex, exactMatch } =
-  identifyColor("#DD4C22");
+	identifyColor("#DD4C22");
 console.log(inputColor); // #DD4C22
 console.log(colorName); // Name of the closest matching color
 console.log(closestHex); // Closest hex color
 console.log(exactMatch); // Boolean if exact match
 ```
 
+```typescript
+const { inputColor, colorName, closestHex, exactMatch } =
+	identifyColor("#DD4C22");
+
+console.log(inputColor); // #DD4C22
+console.log(colorName); // string
+console.log(closestHex); // string
+console.log(exactMatch); // boolean
+```
+
 ### Example Output
 
 ```json
 {
-  "inputColor": "#DD4C22",
-  "colorName": "Vivid Orange",
-  "closestHex": "#DD4C22",
-  "exactMatch": true
+	"inputColor": "#DD4C22",
+	"colorName": "Vivid Orange",
+	"closestHex": "#DD4C22",
+	"exactMatch": true
 }
 ```
 
@@ -66,6 +82,16 @@ const rgb2 = [255, 255, 255];
 const distance = calculateDistance(rgb1, rgb2);
 console.log(distance); // Distance between two colors
 ```
+
+## TypeScript Types
+
+The `@iamsujit/color-kit` package includes the following Typescript types:
+
+- `identifyColor`: Returns an object with properties `inputColor`, `colorName`, `closestHex`, and `exactMatch`.
+- `rgb`: Converts a hex color to an RGB tuple (`[r, g, b]`).
+- `calculateDistance`: Returns the Euclidean distance between two RGB values.
+
+These types will be automatically available when using the package in a TypeScript project.
 
 ## Contributing
 
