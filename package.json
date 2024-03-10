@@ -5,10 +5,9 @@
 	"main": "src/index.js",
 	"types": "types/index.d.ts",
 	"files": [
-		"src",
-		"types",
-		"statics",
-		"README.md"
+		"dist",
+		"README.md",
+		"LICENSE"
 	],
 	"scripts": {
 		"test": "npx tsc --noEmit",
