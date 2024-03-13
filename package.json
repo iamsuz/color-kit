@@ -2,15 +2,14 @@
 	"name": "@iamsuz/color-kit",
 	"version": "1.1.1",
 	"description": "A toolkit to generate random colors and identify color names",
-	"main": "src/index.js",
-	"types": "types/index.d.ts",
+	"main": "dist/src/index.js",
+	"types": "dist/src/index.d.ts",
 	"files": [
 		"dist",
 		"README.md",
 		"LICENSE"
 	],
 	"scripts": {
-		"test": "npx tsc --noEmit",
 		"build": "npx tsc"
 	},
 	"repository": {
