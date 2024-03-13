@@ -12,7 +12,8 @@
 	},
 	"include": [
 		"src/**/*", // Include all JavaScript files in src
-		"types/**/*" // Include type declaration files
+		"types/**/*", // Include type declaration files
+		"test/*"
 	],
 	"exclude": [
 		"node_modules" // Exclude node_modules folder
